@@ -136,10 +136,26 @@ Begin by copying ArrayUtilities.java from the NumberStats folder into the Bubble
 Use the following javadoc comments to implement the required functionality in the ArrayUtilities class.
 
 ```
+/**
+* Swap the values at the positions indicated by index1 and index2
+*    within the data array. This method modifies the array referenced
+*    by the variable data. Nothing is returned by the method.
+* 
+* @param index1 Position of value within data array to swap
+* @param index2 Position of value within data array to swap
+* @param data Reference to an array of integers containing values to be swapped
+*/
 private static void swap(int index1, int index2, int[] data) {...}
 ```
 
 ```
+/**
+* Sort the integer values in the array refeferenced by data in ascending order
+*     using the Bubble Sort algorithm. This method modifies the array referenced
+*    by the variable data. Nothing is returned by the method.
+* 
+* @param data Reference to an array of integers to be sorted
+*/
 public static void sort(int[] data) {...}
 ```
 
@@ -150,10 +166,21 @@ Once it has been confirmed that the array of random ints is being generated prop
 
 #### Expected Program Output (with sample user input)
 ```
-Please enter the desired number of random values
-Please enter a seed value: 123
+-----------------------------
+|   Simulation Parameters   |
+-----------------------------
+Please enter the desired number of random values: 25
+Please enter the seed value: 123
 
-...
+-----------------------------
+|     Generated Values      |
+-----------------------------
+83, 51, 77, 90, 96, 58, 35, 38, 86, 54, 40, 27, 73, 66, 38, 50, 21, 86, 55, 17, 23, 38, 37, 51, 79
+
+-----------------------------
+|        Sorted Values      |
+-----------------------------
+17, 21, 23, 27, 35, 37, 38, 38, 38, 40, 50, 51, 51, 54, 55, 58, 66, 73, 77, 79, 83, 86, 86, 90, 96
 ```
 ### Impementation Guide
 1. Expand the folder named BubbleSorter, copy ArrayUtilities.java from NumberStats folder and open both ArrayUtilities.java and BubbleSorter.java
