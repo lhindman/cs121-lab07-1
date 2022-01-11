@@ -12,7 +12,7 @@ Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQB
 
 ## Lab Warmup - NumberStats
 ### Problem Description
-Design and implement an application that creates an array that is a user specified size containing random numbers in the range of 1 to 100 (inclusive). The user will also specify a seed value so that the results we generate are reproducable. This array of random numbers will be used to generate a histogram that allows the user to visually inspect the frequency distribution of the set of random values. The program should produce a chart similar to the following on that indicates how many input values fell in the range 1 to 10, 11 to 20, and so on. Print one asterisk for each value entered.
+Design and implement an application that creates an array that is a user specified size containing random numbers in the range of 1 to 100 (inclusive). The user will also specify a seed value so that the results we generate are reproducable. This array of random numbers will be used to generate a histogram that allows the user to visually inspect the frequency distribution of the set of random values. The program should produce a chart similar to the following <that indicates how many input values fell in the range 1 to 10, 11 to 20, and so on. Print one asterisk for each value entered.
 
      1 - 10   | *****  
     11 - 20   | **  
@@ -31,14 +31,43 @@ There are countless ways to solve this problem, however the objective of this ac
 #### Static Methods
 Use the following javadoc comments to implement the required functionality in the ArrayUtilities class.
 ```
+/**
+* Instantiate an integer array with the specified number
+*    of elements and initialized it with random numbers 
+*    in the range of 1 - 100 (inclusive).  Use the specified
+*    seed value to initialize the Random object.
+* 
+* Return the array to the caller.
+* @param numElements Size of the array
+* @param seeed Value used to seed the Random object
+* @return int array initialized with random values
+*/
 public static int[] generateRandomData(int numElements, long seed) {...}
 ```
 
 ```
+/**
+* Display the contents of the specified integer array in the console
+*    on a single line, with commas separating the values as shown in 
+*    the following example:
+* 
+*    83, 51, 77, 90, 96, 58, 35
+* 
+*    Notice that there is not a comma following the last value
+* 
+* @param data Array of integer data to be displayed
+*/
 public static void displayArray(int[] data) {...}
 ```
 
 ```
+/**
+* Generate a String containing a histogram showing the distribution over the
+*    range of 1 - 100 (inclusive), divided into bins 10 bins of 10.  The 
+*    output should be formatted as shown in the lab guide.
+* @param data Array of interger values to be processed
+* @return String containing the formatted histograom for the provided data.
+*/
 public static String generateHistogram(int[] data) {...}
 ```
 
@@ -49,10 +78,30 @@ Once it has been confirmed that the array of random ints is being generated prop
 
 #### Expected Program Output (with sample user input)
 ```
-Please enter the desired number of random values
-Please enter a seed value: 123
+-----------------------------
+|   Simulation Parameters   |
+-----------------------------
+Please enter the desired number of random values: 25 
+Please enter the seed value: 123
 
-...
+-----------------------------
+|     Generated Values      |
+-----------------------------
+83, 51, 77, 90, 96, 58, 35, 38, 86, 54, 40, 27, 73, 66, 38, 50, 21, 86, 55, 17, 23, 38, 37, 51, 79
+
+-----------------------------
+|         Histogram         |
+-----------------------------
+  1 - 10  | 
+ 11 - 20  | *
+ 21 - 30  | ***
+ 31 - 40  | ******
+ 41 - 50  | *
+ 51 - 60  | *****
+ 61 - 70  | *
+ 71 - 80  | ***
+ 81 - 90  | ****
+ 91 - 100 | *
 ```
 
 ### Implementation Guide
