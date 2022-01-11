@@ -136,11 +136,11 @@ Begin by copying ArrayUtilities.java from the NumberStats folder into the Bubble
 Use the following javadoc comments to implement the required functionality in the ArrayUtilities class.
 
 ```
-private static swap(int index1, int index2, int[] data) {...}
+private static void swap(int index1, int index2, int[] data) {...}
 ```
 
 ```
-public static sort(int[] data) {...}
+public static void sort(int[] data) {...}
 ```
 
 #### Driver class
