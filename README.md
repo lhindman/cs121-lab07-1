@@ -72,9 +72,9 @@ public static String generateHistogram(int[] data) {...}
 ```
 
 #### Driver class
-Add code to the main() method in NumberStats.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to the ArrayUtilities.generateRandomData() static method and stored the returned array to a local reference variable of the appropriate type. Use the ArrayUtilities.displayArray() static method to confirm that the array of random numbers is being generated properly, but do not leave this enabled in the fimal version of the program.  
+Add code to the main() method in NumberStats.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to ***ArrayUtilities.generateRandomData()*** and stored the returned array to a local reference variable of the appropriate type. Use ***ArrayUtilities.displayArray()*** to confirm that the array of random numbers is being generated properly.
 
-Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to the ArrayUtilities.generateHistogram() static method and store the return String containing the chart data to a local reference variable.  Finally, display the chart String data in the console using the System.out.println() method.
+Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to ***ArrayUtilities.generateHistogram()*** and store the return String containing the chart data to a local reference variable.  Finally, display the chart String data in the console using ***System.out.println()***.
 
 #### Expected Program Output (with sample user input)
 ```
@@ -130,7 +130,7 @@ function sort(dataArray):
 ```
 
 ### Program Design
-Begin by copying ArrayUtilities.java from the NumberStats folder into the BubbleSorter folder.  This will allow us to reuse both the generateRandomData() and displayArray() static methods. The first method we will implement is a private static method called swap(). It takes two indexes (positions) as well as an array reference as parameters and it will swap the values at the respective positions within the array. This method is made private as we only want it to be accessible from methods inside the ArrayUtilities class.  The second method is a public static method called sort(). It takes an array as a parameter and uses the Bubble sort algorithm shown above to sort the values. 
+Begin by copying *ArrayUtilities.java* from the NumberStats folder into the BubbleSorter folder.  This will allow us to reuse both the **generateRandomData()** and **displayArray()** static methods. The first method we will implement is a private static method called **swap()**. It takes two indexes (positions) as well as an array reference as parameters and it will swap the values at the respective positions within the array. This method is made private as we only want it to be accessible from methods inside the ArrayUtilities class.  The second method is a public static method called **sort()**. It takes an array as a parameter and uses the Bubble sort algorithm shown above to sort the values. 
 
 #### Static Methods
 Use the following javadoc comments to implement the required functionality in the ArrayUtilities class.
@@ -160,9 +160,9 @@ public static void sort(int[] data) {...}
 ```
 
 #### Driver class
-Add code to the main() method in BubbleSorter.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to the ArrayUtilities.generateRandomData() static method and stored the returned array to a local reference variable of the appropriate type. Use the ArrayUtilities.displayArray() static method to display the unsorted values and include a header stating that this is the unsorted data.
+Add code to the main() method in BubbleSorter.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to ***ArrayUtilities.generateRandomData()** and store the returned array to a local reference variable of the appropriate type. Use ***ArrayUtilities.displayArray()*** to display the unsorted values and include a header stating that this is the generated values.
 
-Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to the ArrayUtilities.sort() static method, then call ArrayUtilities.displayArray() again, this time with a message stating that this is the sorted data.
+Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to ***ArrayUtilities.sort()***, then call ***ArrayUtilities.displayArray()*** again, this time with a message stating that this is the sorted values.
 
 #### Expected Program Output (with sample user input)
 ```
