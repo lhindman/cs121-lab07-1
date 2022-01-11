@@ -116,9 +116,9 @@ Please enter the seed value: 123
 ### Problem Description
 Design and implement an application that fills an array with random numbers, then uses the Bubble Sort algorithm described below to sort the contents of the array in ascending order. As sorting algorithms go, Bubble sort is one of the worst in terms of performance, but it does have the benefit of being one of the easiest to conceptualize and implement. :) Wikipedia provides an excellent discussion of the [Bubble Sort algorithm](https://en.wikipedia.org/wiki/Bubble_sort) as well as visualizations of the sorting process that may be helpful.
 
-Pseudocode is a way of demonstrating how code should be written without getting bogged down in the details of a particular language. When I am sketching out a program on a whiteboard, I often use pseudocode to represent the structure of my program because my whiteboard doesn't care about datatypes or semicolons. :)
+Pseudocode is a way of demonstrating how code should be written without getting bogged down in the details of a particular language. The indentations represent code blocks which in Java we represent using curly braces {...}. When I am sketching out a program on a whiteboard, I often use pseudocode to represent the structure of my program because my whiteboard doesn't care about datatypes or semicolons. :)
 
-Below is a pseudocode implementation of the Bubble Sort algorithm. The indentations are important because they represent code blocks.
+**Pseudocode implementation of the Bubble Sort algorithm**
 ```
 function sort(dataArray):
     	while !done
