@@ -125,7 +125,7 @@ function sort(dataArray):
 	done = True
 	for( i = 1; i < dataArray.length; i++)
 		if (dataArray[i-1] > dataArray[i])
-			swap(i-1,i)
+			swap(i-1,i,dataArray)
 			done = False
 ```
 
