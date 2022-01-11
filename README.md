@@ -160,7 +160,7 @@ public static void sort(int[] data) {...}
 ```
 
 #### Driver class
-Add code to the main() method in BubbleSorter.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to ***ArrayUtilities.generateRandomData()** and store the returned array to a local reference variable of the appropriate type. Use ***ArrayUtilities.displayArray()*** to display the unsorted values and include a header stating that this is the generated values.
+Add code to the main() method in BubbleSorter.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to ***ArrayUtilities.generateRandomData()*** and store the returned array to a local reference variable of the appropriate type. Use ***ArrayUtilities.displayArray()*** to display the unsorted values and include a header stating that this is the generated values.
 
 Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to ***ArrayUtilities.sort()***, then call ***ArrayUtilities.displayArray()*** again, this time with a message stating that this is the sorted values.
 
