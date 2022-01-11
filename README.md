@@ -106,39 +106,19 @@ Please enter a seed value: 123
 
 ...
 ```
-
 ### Impementation Guide
-1. Expand the folder named A3-BubbleSorter and create two new files named BubbleSorter.java and Driver.java
-2. Implement the program as specified in the BubbleSorter Activity Guide
-3. Test the program using the run link above the main method
-4. Commit the changes to your local repository with a message stating that Activity 3 is completed.
+1. Expand the folder named BubbleSorter, copy ArrayUtilities.java from NumberStats folder and open both ArrayUtilities.java and BubbleSorter.java
+2. Design a program to satisfy the requirements in the Problem Description and Program Design sections
+3. Test the program using the sample user input and compare against the expected output.
+4. Commit the changes to your local repository with a message stating that Lab Activity 1 is completed.
 5. Push the changes from your local repository to the github classroom repository.
 
+## Coding Journal (Optional)
+Keep a journal of your activities as you work on this lab. Many of the best engineers that I have worked with professionally have kept some sort of engineering journal. I personally packed notebooks around with me for nearly 8 years before I began keeping my notes electronically.   
 
-## Activity 4 - QuickDraw Game
-### Problem Description
-Design and implement an application that plays the Quick Draw Game.  
+Your journal can track ideas, bugs, cool links, code snippets, shell commands, rants, or simply a reflection on what worked well or not-so-well with this lab activity. I will not be grading the content of your journal, but I will expect at least two timestamped journal entries of at least a 75 to 150 words each added to the provided Journal.md file.  The purpose of this component is to help develop the habit of taking notes and creating documentation while you code. The more detail you provide the better as that will help you if you ever need to refer back to this project in the future.
 
-The details for this activity are in the guide below:
+## Markdown Resources
+Markdown is a notation that is used to format text documents.  It is widely used in Software Development shops around the world, which is why we're asking you to use it in your lab documentation.  
 
-[QuickDraw Activity Guide](https://docs.google.com/document/d/1wickOaQSKScPR0EAizBDAdmYBEj1JXJwiNuzzFji8-Q/edit?usp=sharing)
-
-### Impementation Guide
-1. Expand the folder named A4-QuickDraw and create two new files named DeckOfCards.java and QuickDraw.java
-2. Implement the program as specified in the QuickDraw Activity Guide
-3. Test the program using the run link above the main method
-4. Commit the changes to your local repository with a message stating that Activity 4 is completed.
-5. Push the changes from your local repository to the github classroom repository.
-
-## Activity 5 - Gradebook Revisited
-### Problem Description
-Redesign the Gradebook application created in Lab05 to use arrays instead of the ArrayList class.  The initial size of the gradebook internal array should start at 4 elements and should used the heuristic discussed in the lecture to grow the array by doubling its size each time it runs out of space.  A gradebook csv file containing 1000+ student records has been provided.
-
-### Implementation Guide
-1. Copy Gradebook.java, Student.java, and gradebook.csv from Lab05 into the A5-Gradebook folder.
-2. Modify Gradebook.java satisfy the requirements in the Problem Description 
-3. Test the program using the gradebook-xl.csv dataset
-4. Commit the changes to your local repository with a message stating that Activity 5 is completed.
-5. Push the changes from your local repository to the github classroom repository
-
-
+Github provides a guide for getting started:  [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
