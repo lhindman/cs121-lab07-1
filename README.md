@@ -57,11 +57,23 @@ Once it has been confirmed that the array of random ints is being generated prop
 
 ## Lab Activity 1 - BubbleSorter
 ### Problem Description
-Design and implement an application that fills an array with random numbers, then uses the Bubble Sort algorithm described below to sort the contents of the array in ascending order.  
+Design and implement an application that fills an array with random numbers, then uses the Bubble Sort algorithm described below to sort the contents of the array in ascending order. As sorting algorithms go, Bubble sort is one of the worst in terms of performance, but it does have the benefit of being one of the easiest to conceptualize and implement. :) Wikipedia provides an excellent discussion of the [Bubble Sort algorithm](https://en.wikipedia.org/wiki/Bubble_sort) as well as visualizations of the sorting process that may be helpful.
 
-The details for this activity are in the guide below:
+Pseudocode is a way of demonstrating how code should be written without getting bogged down in the details of a particular language. When I am sketching out a program on a whiteboard, I often use pseudocode to represent the structure of my program because my whiteboard doesn't care about datatypes or semicolons. :)
 
-[BubbleSorter Activity Guide](https://docs.google.com/document/d/1P92BHqXGEkyCTdoOBWESo1iF7h1p6KSMtuJPaHNd6bU/edit?usp=sharing)
+Below is a pseudocode implementation of the Bubble Sort algorithm. The indentations are important because they represent code blocks.
+```
+function sort(dataArray):
+    	while !done
+	done = True
+	for( i = 1; i < dataArray.length; i++)
+		if (dataArray[i-1] > dataArray[i])
+			swap(i-1,i)
+			done = False
+```
+
+### Program Design
+Begin by copying ArrayUtilities.java from the NumberStats folder into the BubbleSorter folder.  This will allow us to reuse both the generateRandomData() and displayArray() static methods. 
 
 ### Impementation Guide
 1. Expand the folder named A3-BubbleSorter and create two new files named BubbleSorter.java and Driver.java
