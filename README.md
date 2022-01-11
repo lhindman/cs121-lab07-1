@@ -47,6 +47,14 @@ Add code to the main() method in NumberStats.java that uses a Scanner to prompt 
 
 Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to the ArrayUtilities.generateHistogram() static method and store the return String containing the chart data to a local reference variable.  Finally, display the chart String data in the console using the System.out.println() method.
 
+#### Expected Program Output (with sample user input)
+```
+Please enter the desired number of random values
+Please enter a seed value: 123
+
+...
+```
+
 ### Implementation Guide
 1. Expand the folder named NumberStats and open both ArrayUtilities.java and NumberStats.java
 2. Design a program to satisfy the requirements in the Problem Description and Program Design sections
@@ -73,7 +81,31 @@ function sort(dataArray):
 ```
 
 ### Program Design
-Begin by copying ArrayUtilities.java from the NumberStats folder into the BubbleSorter folder.  This will allow us to reuse both the generateRandomData() and displayArray() static methods. 
+Begin by copying ArrayUtilities.java from the NumberStats folder into the BubbleSorter folder.  This will allow us to reuse both the generateRandomData() and displayArray() static methods. The first method we will implement is a private static method called swap(). It takes two indexes (positions) as well as an array reference as parameters and it will swap the values at the respective positions within the array. This method is made private as we only want it to be accessible from methods inside the ArrayUtilities class.  The second method is a public static method called sort(). It takes an array as a parameter and uses the Bubble sort algorithm shown above to sort the values. 
+
+#### Static Methods
+Use the following javadoc comments to implement the required functionality in the ArrayUtilities class.
+
+```
+private static swap(int index1, int index2, int[] data) {...}
+```
+
+```
+public static sort(int[] data) {...}
+```
+
+#### Driver class
+Add code to the main() method in BubbleSorter.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to the ArrayUtilities.generateRandomData() static method and stored the returned array to a local reference variable of the appropriate type. Use the ArrayUtilities.displayArray() static method to display the unsorted values and include a header stating that this is the unsorted data.
+
+Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to the ArrayUtilities.sort() static method, then call ArrayUtilities.displayArray() again, this time with a message stating that this is the sorted data.
+
+#### Expected Program Output (with sample user input)
+```
+Please enter the desired number of random values
+Please enter a seed value: 123
+
+...
+```
 
 ### Impementation Guide
 1. Expand the folder named A3-BubbleSorter and create two new files named BubbleSorter.java and Driver.java
