@@ -1,31 +1,18 @@
-# Lab07 Guide
+# Module 7 Lab Guide (part 1)
 ## Getting Started
 [Lab Introduction Video](https://youtu.be/y6G2ucQTEBw)
-- Please clone the [Mod07 Code Examples](https://github.com/lhindman/cs121-mod07-examples.git).
-- Please watch the [Activity 5 Walkthough Videos](https://www.youtube.com/playlist?list=PLbxWwkW_BhyAyr--jgUd-naSUUj8NfihJ).  
-
 
 ### Code Style Requirements
 Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQBKkApnNAzzgwOSvRM03DmhYWx5yEfecT2WXfjI/edit?usp=sharing) and apply it in all lab activities and projects this semester. Coding Style will assessed as part of your lab and project grades.
 
 ### Code Quality Requirements
-- Code must compile without warnings using openjdk11
+- Code must compile without warnings using openjdk 11
 - Code must run without errors or warnings on safe-path and edge test cases
 - More to come as we learn about input validation and exception handling  
-## Activity 1 - NumberCounter
-### Problem Description
-Design and implement an application that reads an arbitrary number of integers that are in the range 0 to 50 inclusive and counts how many occurrences of each are entered. After all input has been processed, print all of the values (with the number of occurrences) that were entered one or more times. User input must be validated and invalid input should be handled gracefully.
 
-### Implementation Guide
-1. Expand the folder named A1-NumberCounter and create a new file named NumberCounter.java
-2. Design a program to satisfy the requirement in the Problem Description and enter the program code in NumberCounter.java
-3. Test the program and pay particular attention to boundary/edge cases and invalid input.
-4. Commit the changes to your local repository with a message stating that Activity 1 is completed.
-5. Push the changes from your local repository to the github classroom repository.
-
-## Activity 2 - NumberStats
+## Lab Warmup - NumberStats
 ### Problem Description
-Design and implement an application that creates a histogram that allows you to visually inspect the frequency distribution of a set of values. The program should read in an arbitrary number of integers that are in the range of 1 to 100 inclusive; then it should produce a chart similar to the following on that indicates how many input values fell in the range 1 to 10, 11 to 20, and so on. Print one asterisk for each value entered.
+Design and implement an application that creates an array that is a user specified size containing random numbers in the range of 1 to 100 (inclusive). The user will also specify a seed value so that the results we generate are reproducable. This array of random numbers will be used to generate a histogram that allows the user to visually inspect the frequency distribution of the set of random values. The program should produce a chart similar to the following on that indicates how many input values fell in the range 1 to 10, 11 to 20, and so on. Print one asterisk for each value entered.
 
      1 - 10   | *****  
     11 - 20   | **  
@@ -38,16 +25,39 @@ Design and implement an application that creates a histogram that allows you to 
     81 - 90   | *******  
     91 - 100  | *********  
 
-### Implementation Guide
-1. Expand the folder named A2-NumberStats and create a new file named NumberStats.java
-2. Design a program to satisfy the requirements in the Problem Description and enter the program code in NumberStats.java
-3. Test the program and pay particular attention to boundary/edge cases and invalid input.
-4. Commit the changes to your local repository with a message stating that Activity 2 is completed.
-5. Push the changes from your local repository to the github classroom repository.
+### Program Design
+There are countless ways to solve this problem, however the objective of this activity is to gain experience working with Arrays and Methods.  To that end, we will design our solution to use three static methods.  The first method is called **generateRandomData()** and it takes a numElements and a seed value as parameters.  This method instantiates an array with the specified number of elements, loads it with random data using the seed value, and returns a reference to the caller. The second method is called **displayArray()** and it takes an array as a parameter and simply prints each element to the console.  The final method is called **generateHistogram()** and it takes an array as a parameter and returns a String containing a chart as shown above.
 
-## Activity 3 - BubbleSorter
+#### Static Methods
+Use the following javadoc comments to implement the required functionality in the ArrayUtilities class.
+```
+public static int[] generateRandomData(int numElements, long seed) {...}
+```
+
+```
+public static void displayArray(int[] data) {...}
+```
+
+```
+public static String generateHistogram(int[] data) {...}
+```
+
+#### Driver class
+Add code to the main() method in NumberStats.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to the ArrayUtilities.generateRandomData() static method and stored the returned array to a local reference variable of the appropriate type. Use the ArrayUtilities.displayArray() static method to confirm that the array of random numbers is being generated properly, but do not leave this enabled in the fimal version of the program.  
+
+Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to the ArrayUtilities.generateHistogram() static method and store the return String containing the chart data to a local reference variable.  Finally, display the chart String data in the console using the System.out.println() method.
+
+### Implementation Guide
+1. Expand the folder named NumberStats and open both ArrayUtilities.java and NumberStats.java
+2. Design a program to satisfy the requirements in the Problem Description and Program Design sections
+3. Test the program using the sample user input and compare against the expected output.
+4. Commit the changes to your local repository with a message stating that Lab Warmup is completed.
+5. Push the changes from your local repository to the github classroom repository.
+6. Take a break, you've earned it. :)
+
+## Lab Activity 1 - BubbleSorter
 ### Problem Description
-Design and implement an application that fills an array with random numbers and uses the Bubble Sort algorithm to sort the contents of the array.  
+Design and implement an application that fills an array with random numbers, then uses the Bubble Sort algorithm described below to sort the contents of the array in ascending order.  
 
 The details for this activity are in the guide below:
 
