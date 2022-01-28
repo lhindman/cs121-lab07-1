@@ -72,9 +72,9 @@ public static String generateHistogram(int[] data) {...}
 ```
 
 #### Driver class
-Add code to the main() method in NumberStats.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to ***ArrayUtilities.generateRandomData()*** and stored the returned array to a local reference variable of the appropriate type. Use ***ArrayUtilities.displayArray()*** to confirm that the array of random numbers is being generated properly.
+Add code to the main() method in NumberStats.java that uses a Scanner to prompt the user for the desired number of elements to generate and a seed value. Pass these values as arguments to ***ArrayUtilities.generateRandomData()*** and store the returned array to a local reference variable of the appropriate type. Use ***ArrayUtilities.displayArray()*** to confirm that the array of random numbers is being generated properly.
 
-Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to ***ArrayUtilities.generateHistogram()*** and store the return String containing the chart data to a local reference variable.  Finally, display the chart String data in the console using ***System.out.println()***.
+Once it has been confirmed that the array of random ints is being generated properly, pass the array as an argument to ***ArrayUtilities.generateHistogram()*** and store the returned String containing the chart data to a local reference variable.  Finally, display the chart String data in the console using ***System.out.println()***.
 
 #### Expected Program Output (with sample user input)
 ```
