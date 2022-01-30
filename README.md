@@ -11,6 +11,8 @@ Please review the [CS121 Style Guide](https://docs.google.com/document/d/1LWbGQB
 - More to come as we learn about input validation and exception handling  
 
 ## Lab Warmup - NumberStats
+[Walkthrough Video](https://boisestate.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=855156ae-2848-4b19-8286-ae2b016b565d&start=0)  
+
 ### Problem Description
 Design and implement an application that creates an array that is a user specified size containing random numbers in the range of 1 to 100 (inclusive). The user will also specify a seed value so that the results we generate are reproducable. This array of random numbers will be used to generate a histogram that allows the user to visually inspect the frequency distribution of the set of random values. The program should produce a chart similar to the following <that indicates how many input values fell in the range 1 to 10, 11 to 20, and so on. Print one asterisk for each value entered.
 
