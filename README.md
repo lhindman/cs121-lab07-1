@@ -123,6 +123,7 @@ Pseudocode is a way of demonstrating how code should be written without getting 
 **Pseudocode implementation of the Bubble Sort algorithm**
 ```
 function sort(dataArray):
+    done = False
     while !done
         done = True
         for( i = 1; i < dataArray.length; i++)
